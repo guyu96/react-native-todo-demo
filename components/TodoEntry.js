@@ -3,6 +3,10 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export default class TodoEntry extends Component {
   render() {
-
+    return (
+      <Text>
+        { this.props.text }
+      </Text>
+    );
   }
 }
