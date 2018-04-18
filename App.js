@@ -25,7 +25,6 @@ export default class App extends Component {
   render() {
     return (
       <View style={ styles.container }>
-        <Text>Let's build a todo app</Text>
         <TodoInput addTodo={ this.addTodoEntry } />
         <TodoList todoEntries={ this.state.todoEntries }/>
       </View>
@@ -35,9 +34,10 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    margin: 40,
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });

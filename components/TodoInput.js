@@ -18,7 +18,9 @@ export default class TodoInput extends Component {
 
   render() {
     return (
-      <View>
+      <View
+        style={ styles.container }
+      >
         <TextInput
           onChangeText={ (text) => this.setState( { text } ) }
           value={ this.state.text }
@@ -34,8 +36,15 @@ export default class TodoInput extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+
   input : {
     height: 40,
+    width: 200,
+    marginRight: 20,
     borderColor: 'gray',
     borderWidth: 1
   }
