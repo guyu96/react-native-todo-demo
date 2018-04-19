@@ -16,7 +16,7 @@ export default class App extends Component {
         nextKey: prevState.nextKey + 1,
         todoEntries: [
           ...prevState.todoEntries,
-          { key: this.state.nextKey, text: text}
+          { key: prevState.nextKey.toString(), text: text}
         ]
       };
     });
